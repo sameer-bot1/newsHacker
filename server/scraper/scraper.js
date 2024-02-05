@@ -11,7 +11,6 @@ async function scrapeHackerNews(pages = 3) {
         const response = await axios.get(`https://news.ycombinator.com/news?p=${page}`);
         const $ = cheerio.load(response.data);
   
-        // Iterate through each news item on the current page
         $('.athing').each((index, element) => {
           const title = $(element).find('.title a').text().trim();
           const url = $(element).find('.title a').attr('href');
