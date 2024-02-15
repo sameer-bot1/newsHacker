@@ -7,6 +7,7 @@ const Containers = styled.div`
     height: 60px;
     
  `;
+ //wrapper 
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
